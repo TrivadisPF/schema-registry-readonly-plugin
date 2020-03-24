@@ -72,7 +72,7 @@ Now after we start the Schema Registry, trying to register a subject will throw 
 $ curl  -XPOST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data '{
   "schema": "{\"type\":\"record\",\"name\":\"Payment\",\"namespace\":\"com.trivadis.examples.clients.simpleavro\",\"fields\":[{\"name\":\"id\",\"type\":\"string\"},{\"name\":\"temp\",\"type\":\"double\"}]}"
 }' http://172.16.252.11:8081/subjects/test-value/versions
-{"error_code":42205,"message":"This schema-registry instance is in read-only mode."}
+{"error_code":42205,"message":"This schema-registry instance is read-only (forced by the SchemaRegistryReadOnlyResourceExtension)"}
 ```
 
 The only difference is the error message itself, telling that the whole instance is in read-only mode.
