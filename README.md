@@ -1,6 +1,9 @@
 # Resource Extension Plugin for setting Confluent Schema Registry to read-only
 
-This project holds a resource extension for the Confluent Schema Registry that allows to set a schema registry instance to read-only. 
+[download link](https://github.com/TrivadisPF/schema-registry-readonly-plugin/releases/download/1.0.0/schema-registry-readonly-plugin-1.0.0.jar)
+
+This project holds a resource extension for the Confluent Schema Registry that allows to set a schema registry instance to read-only.
+
 
 It is baed on the idea presented in the blog article [Fun with Confluent Schema Registry Extensions](https://yokota.blog/2019/01/14/fun-with-confluent-schema-registry-extensions/) by Robert Yokota. 
 Please note that Subject mode support mentioned in the article is now part of Confluent Schema Registry (version 5.2 and later).
