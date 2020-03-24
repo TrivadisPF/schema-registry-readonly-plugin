@@ -1,4 +1,4 @@
-# Confluent Schema Registry Read-Only Mode
+# Resource Extension Plugin for setting Confluent Schema Registry to read-only
 
 This project holds a resource extension for the Confluent Schema Registry that allows to set a schema registry instance to read-only. 
 
@@ -74,7 +74,3 @@ $ curl  -XPOST -H "Content-Type: application/vnd.schemaregistry.v1+json" --data 
 
 The only difference is the error message itself, telling that the whole instance is in read-only mode.
 
-# Platys  
-      SCHEMA_REGISTRY_RESOURCE_EXTENSION_CLASS: 'io.yokota.schemaregistry.mode.SchemaRegistryModeResourceExtension'
-    volumes:
-      - ./plugins/schema-registry/schema-registry-readonly-plugin-1.0.0.jar:/usr/share/java/schema-registry/schema-registry-readonly-plugin-1.0.0.jar
