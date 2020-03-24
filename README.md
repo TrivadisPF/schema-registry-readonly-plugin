@@ -58,7 +58,7 @@ However there is currently no way to set a schema registry to "READONLY" without
 
 To force a schema registry instance to read-only upon startup, the  `SchemaRegistryReadOnlyResourceExtension` resource extension plugin can be used.
 
-To use the resource extension, first copy the extension jar to ${CONFLUENT_HOME}/share/java/schema-registry. 
+To use the resource extension, first copy the [extension jar](https://github.com/TrivadisPF/schema-registry-readonly-plugin/releases/download/1.0.0/schema-registry-readonly-plugin-1.0.0.jar) to ${CONFLUENT_HOME}/share/java/schema-registry. 
 
 Next add the following to `${CONFLUENT_HOME}/etc/schema-registry/schema-registry.properties`:
 
