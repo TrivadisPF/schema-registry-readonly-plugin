@@ -6,6 +6,7 @@
 
 package com.trivadis.kafka.schemaregistry.rest.extensions;
 
+import com.trivadis.kafka.schemaregistry.rest.extensions.filter.PostRedirectFilter;
 import io.confluent.kafka.schemaregistry.rest.SchemaRegistryConfig;
 import io.confluent.kafka.schemaregistry.rest.extensions.SchemaRegistryResourceExtension;
 import io.confluent.kafka.schemaregistry.storage.SchemaRegistry;
@@ -23,6 +24,7 @@ public class SchemaRegistryReadOnlyResourceExtension
         SchemaRegistryConfig schemaRegistryConfig,
         SchemaRegistry schemaRegistry
     ) {
+        configurable.register(new PostRedirectFilter());
         configurable.register(new ModeFilter());
     }
 
